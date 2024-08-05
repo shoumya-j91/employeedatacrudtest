@@ -1,4 +1,7 @@
 package com.employeedata.crudtest.repository;
 
-public interface IEmployeeRepository {
+import com.employeedata.crudtest.model.Employee;
+import org.springframework.data.repository.CrudRepository;
+
+public interface IEmployeeRepository extends CrudRepository<Employee, Long> {
 }
